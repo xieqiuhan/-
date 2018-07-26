@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册帐号</title>
+    <link rel="stylesheet" type="text/css" href="baidu.css"/>
+    <script src="jquery.js"></script>
+    <script src="baidu.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--header开始-->
+<div class="header">
+    <div>
+        <div class="logo">
+            <img src="image/baidu.png"/>
+        </div>
+        <p class="h-text">注册百度账号</p>
+    </div>
+
+    <div class="login">
+        <span>我已注册，现在就</span>
+    </div>
+    <input  type="button" class="login_icon" value="登录" onclick="window.location.href='http://www.baidu.com'" />
+</div>
+<!--header结束-->
+
+<!--content开始-->
+<div class="content">
+    <div class="reg">
+        <form action="http://www.baidu.com" method="post">
+            <dl>
+                <dt>用户名</dt>
+                <dd class="ipt_box">
+                    <input id="usr" name="usr" type="text" placeholder="请设置用户名" />
+                    <span class="clear"></span>
+                </dd>
+                <dd class="mes">
+                    <div class="tip">设置后不可更改<br>中英文均可，最长14个英文或7个汉字</div>
+                    <div class="error">
+                        <span class="error_icon"></span>
+                        <span></span>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>手机号</dt>
+                <dd class="ipt_box">
+                    <input id="tel" name="tel" type="text" placeholder="可用于登录和找回密码" />
+                    <span class="clear"></span>
+                </dd>
+                <dd class="mes">
+                    <div class="tip">请输入中国大陆手机号,其他用户不可见</div>
+                    <div class="error">
+                        <span class="error_icon"></span>
+                        <span></span>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>密码</dt>
+                <dd class="ipt_box">
+                    <input id="pwd" name="pwd" type="password" placeholder="请设置登录密码" />
+                    <span class="clear"></span>
+                </dd>
+                <dd class="mes">
+                    <div class="error">
+                        <span class="error_icon"></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="pwd_icon">○</span><span class="pwd_tip">长度为6~14个字符</span>
+                        </li>
+                        <li>
+                            <span class="pwd_icon">○</span><span class="pwd_tip">支持数字、大小写字母和标点符号</span>
+                        </li>
+                        <li>
+                            <span class="pwd_icon">○</span><span class="pwd_tip">不允许有空格</span>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>验证码</dt>
+                <dd class="ipt_box">
+                    <input id="yzm" name="yzm" type="text" placeholder="请输入验证码" />
+                    <span class="clear"></span>
+                    <button class="getBtn">获取短信验证码</button>
+                </dd>
+                <dd class="mes">
+                    <div class="error" >
+                        <span class="error_icon yzm"><span>请填写验证码</span></span>
+                    </div>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt></dt>
+                <dd class=" pro">
+                    <input id="agree" type="checkbox"  checked/>
+                    <span>阅读并接受<a href="#">《XX用户协议》</a></span>
+                </dd>
+                <dd class="mes">
+                   <div class="error agreeErr">
+                    <span class="error_icon"></span>
+                    <span>您还未接受百度用户协议</span>
+                   </div>
+
+                </dd>
+            </dl>
+            <dl>
+                <dt></dt>
+                <dd>
+                    <input class="regBtn" type="button" value="注册" />
+                </dd>
+
+
+
+            </dl>
+        </form>
+    </div>
+
+    <div class="right">
+        <h3 class="phoneReg">手机快速注册</h3>
+        <div class="loin">
+            <p class="p1">请使用中国大陆手机号，编辑短信：</p>
+            <p class="p2">6-14位字符（支持数字/字母/符号）</p>
+            <p class="p1">作为登录密码，发送至：</p>
+            <p class="p2">0000 00000 00000</p>
+            <p class="p3">即可注册成功，手机号即为登录帐号。</p>
+            <img src="image/erweima.png"/>
+            <p class="p4">请使用手机百度进行扫码</p>
+        </div>
+    </div>
+</div>
+<!--content结束-->
+
+<!--footer开始-->
+<div class="footer">
+    <p>2018 ©xqh</p>
+</div>
+<!--footer结束-->
+</body>
+</html>
